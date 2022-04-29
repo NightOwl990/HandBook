@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditSubject">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_edit_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"/>
+
+    <TextView
+        android:id="@+id/tv_title_edit_subject"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar_edit_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Edit Subject"/>
+
+    <EditText
+        android:id="@+id/edt_ten_subject"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@id/tv_title_edit_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên môn học"/>
+
+    <EditText
+        android:id="@+id/edt_so_tin_chi"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@id/edt_ten_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số tín chỉ"/>
+
+    <Spinner
+        android:id="@+id/spinner_time"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edt_so_tin_chi"/>
+
+    <EditText
+        android:id="@+id/edt_place_subject"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@id/spinner_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Địa điểm"/>
+
+    <Button
+        android:id="@+id/btn_them_edit_subject"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:layout_below="@id/edt_place_subject"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@id/edt_place_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+
+            android:id="@+id/btn_sua_edit_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa" />
+        <Button
+            android:layout_marginStart="30dp"
+            android:id="@+id/btn_xoa_edit_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditStudent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_edit_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"/>
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar_edit_student"
+        android:id="@+id/tv_title_edit_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Edit Student"/>
+
+    <EditText
+        android:id="@+id/edt_ten_student"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@id/tv_title_edit_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên sinh viên"/>
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/edt_ma_student"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@id/edt_ten_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã sinh viên"/>
+
+    <RadioGroup
+        android:id="@+id/rdg_gioitinh"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_ma_student">
+        <RadioButton
+            android:id="@+id/rdo_nam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"/>
+        <RadioButton
+            android:id="@+id/rdo_nu"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"/>
+    </RadioGroup>
+
+    <EditText
+        android:drawableStart="@drawable/ic_calendar"
+        android:id="@+id/edt_ngaysinh_student"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@id/rdg_gioitinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" dd/MM/YYY"/>
+
+    <Button
+        android:id="@+id/btn_them_edit_student"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:layout_below="@id/edt_ngaysinh_student"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@id/edt_ngaysinh_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+
+            android:id="@+id/btn_sua_edit_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa" />
+        <Button
+            android:layout_marginStart="30dp"
+            android:id="@+id/btn_xoa_edit_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
